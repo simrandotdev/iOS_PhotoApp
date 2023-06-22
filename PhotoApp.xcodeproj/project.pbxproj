@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D7AD5652A40A2CA0038F123 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7AD5642A40A2CA0038F123 /* SignupConstants.swift */; };
+		3D89CD122A40972C00BDEE8A /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D89CD112A40972C00BDEE8A /* SignupFormModelValidatorTests.swift */; };
+		3D89CD142A40996E00BDEE8A /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D89CD132A40996E00BDEE8A /* SignupFormModelValidator.swift */; };
 		3DF4E75B2A3B652600DDE3BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF4E75A2A3B652600DDE3BF /* AppDelegate.swift */; };
 		3DF4E75D2A3B652600DDE3BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF4E75C2A3B652600DDE3BF /* SceneDelegate.swift */; };
 		3DF4E75F2A3B652600DDE3BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF4E75E2A3B652600DDE3BF /* ViewController.swift */; };
 		3DF4E7622A3B652600DDE3BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF4E7602A3B652600DDE3BF /* Main.storyboard */; };
 		3DF4E7642A3B652700DDE3BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF4E7632A3B652700DDE3BF /* Assets.xcassets */; };
 		3DF4E7672A3B652700DDE3BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF4E7652A3B652700DDE3BF /* LaunchScreen.storyboard */; };
-		3DF4E7722A3B652700DDE3BF /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF4E7712A3B652700DDE3BF /* PhotoAppTests.swift */; };
 		3DF4E77C2A3B652700DDE3BF /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF4E77B2A3B652700DDE3BF /* PhotoAppUITests.swift */; };
 		3DF4E77E2A3B652700DDE3BF /* PhotoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF4E77D2A3B652700DDE3BF /* PhotoAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D7AD5642A40A2CA0038F123 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
+		3D89CD112A40972C00BDEE8A /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		3D89CD132A40996E00BDEE8A /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
 		3DF4E7572A3B652600DDE3BF /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF4E75A2A3B652600DDE3BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DF4E75C2A3B652600DDE3BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +50,6 @@
 		3DF4E7662A3B652700DDE3BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DF4E7682A3B652700DDE3BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DF4E76D2A3B652700DDE3BF /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DF4E7712A3B652700DDE3BF /* PhotoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppTests.swift; sourceTree = "<group>"; };
 		3DF4E7772A3B652700DDE3BF /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF4E77B2A3B652700DDE3BF /* PhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITests.swift; sourceTree = "<group>"; };
 		3DF4E77D2A3B652700DDE3BF /* PhotoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				3DF4E7632A3B652700DDE3BF /* Assets.xcassets */,
 				3DF4E7652A3B652700DDE3BF /* LaunchScreen.storyboard */,
 				3DF4E7682A3B652700DDE3BF /* Info.plist */,
+				3D89CD132A40996E00BDEE8A /* SignupFormModelValidator.swift */,
+				3D7AD5642A40A2CA0038F123 /* SignupConstants.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -113,7 +119,7 @@
 		3DF4E7702A3B652700DDE3BF /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				3DF4E7712A3B652700DDE3BF /* PhotoAppTests.swift */,
+				3D89CD112A40972C00BDEE8A /* SignupFormModelValidatorTests.swift */,
 			);
 			path = PhotoAppTests;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 					};
 					3DF4E76C2A3B652700DDE3BF = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1430;
 						TestTargetID = 3DF4E7562A3B652600DDE3BF;
 					};
 					3DF4E7762A3B652700DDE3BF = {
@@ -260,6 +267,8 @@
 			files = (
 				3DF4E75F2A3B652600DDE3BF /* ViewController.swift in Sources */,
 				3DF4E75B2A3B652600DDE3BF /* AppDelegate.swift in Sources */,
+				3D89CD142A40996E00BDEE8A /* SignupFormModelValidator.swift in Sources */,
+				3D7AD5652A40A2CA0038F123 /* SignupConstants.swift in Sources */,
 				3DF4E75D2A3B652600DDE3BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DF4E7722A3B652700DDE3BF /* PhotoAppTests.swift in Sources */,
+				3D89CD122A40972C00BDEE8A /* SignupFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +458,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +489,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,15 +511,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WC362J72KA;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bytesizedsoftware.PhotoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoApp";
@@ -520,11 +533,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WC362J72KA;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bytesizedsoftware.PhotoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,6 +557,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WC362J72KA;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bytesizedsoftware.PhotoAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -561,6 +576,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WC362J72KA;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bytesizedsoftware.PhotoAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
