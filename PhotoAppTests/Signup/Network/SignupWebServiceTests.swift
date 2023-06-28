@@ -68,6 +68,24 @@ final class SignupWebServiceTests: XCTestCase {
     }
     
     
+    func testSignupWebService_WhenEmptyURLProvided_ReturnErrorMessage() {
+        // Arrange
+        sut = SignupWebService(urlString: "")
+        
+        let expection = expectation(description: "Signup() method expectation for a response the contains a empty URL")
+        
+        // Act
+        sut.signup(withForm: signupFormRequestModel) { (signupFormResponseModel, error) in
+            // Assert
+            XCTAssertNil(signupFormResponseModel, "The response model for a request containing unknown JSON response, should have been nil")
+            XCTAssertEqual(error, SignupError.invalidRequestURLString, "The error should invalid URL String.")
+            expection.fulfill()
+        }
+
+        wait(for: [expection], timeout: 5)
+    }
+    
+    
     override func tearDownWithError() throws {
         sut = nil
         signupFormRequestModel = nil
