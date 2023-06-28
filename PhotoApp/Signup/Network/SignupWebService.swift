@@ -34,6 +34,8 @@ class SignupWebService {
             let dataTask = urlSession.dataTask(with: request) { data, urlResponse, error in
                 if let data = data, let signupResponseModel = try? JSONDecoder().decode(SignUpResponseModel.self, from: data) {
                     completion(signupResponseModel, nil)
+                } else {
+                    completion(nil, SignupError.responseModelParsingError)
                 }
             }
             dataTask.resume()

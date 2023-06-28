@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct SignupError: Error {
-    
+enum SignupError: Error {
+    case responseModelParsingError
 }
