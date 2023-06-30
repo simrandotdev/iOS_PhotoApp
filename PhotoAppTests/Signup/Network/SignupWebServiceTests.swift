@@ -86,6 +86,25 @@ final class SignupWebServiceTests: XCTestCase {
     }
     
     
+    func testSignupWebService_WhenURLRequestFails_ReturnsErrorMessageDescription() {
+        // Arrange
+        let expection = expectation(description: "Failed request expectation")
+        let errorDescription = "The operation couldn’t be completed."
+        MockURLProtocol.error = SignupError.failedRequest(description: errorDescription)
+        
+        // Act
+        sut.signup(withForm: signupFormRequestModel) { signupFormRequestModel, error in
+            
+            XCTAssertNil(signupFormRequestModel, "Response model should be nil")
+            XCTAssertNotNil(error)
+            expection.fulfill()
+        }
+        
+        // Assert
+        wait(for: [expection], timeout: 5)
+    }
+    
+    
     override func tearDownWithError() throws {
         sut = nil
         signupFormRequestModel = nil

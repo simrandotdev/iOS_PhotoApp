@@ -21,7 +21,6 @@ class SignupWebService {
         withForm formModel: SignupFormRequestModel,
         completion: @escaping (SignUpResponseModel?, SignupError?) -> Void) {
             guard let url = URL(string: urlString) else {
-                // TODO: Create a unit test to test that a specific error message is returned if URL is nil
                 completion(nil, .invalidRequestURLString)
                 return
             }
@@ -33,6 +32,13 @@ class SignupWebService {
             request.httpBody = try? JSONEncoder().encode(formModel)
             
             let dataTask = urlSession.dataTask(with: request) { data, urlResponse, error in
+                
+                if let error {
+                    print("❌", error.localizedDescription)
+                    completion(nil, .failedRequest(description: error.localizedDescription))
+                    return
+                }
+                
                 if let data = data, let signupResponseModel = try? JSONDecoder().decode(SignUpResponseModel.self, from: data) {
                     completion(signupResponseModel, nil)
                 } else {
