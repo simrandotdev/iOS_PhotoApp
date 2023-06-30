@@ -105,6 +105,7 @@
 		3D0782E12A4490B900B7726F /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				3DAB368A2A4F2440000444F4 /* Protocols */,
 				3DAB36832A4F1B05000444F4 /* Presenters */,
 				3D0782E42A44913D00B7726F /* Network */,
 				3D0782E32A44910500B7726F /* Controllers */,
@@ -116,7 +117,6 @@
 		3D0782E22A4490CC00B7726F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3DAB36882A4F1DF4000444F4 /* SignupModelValidatorProtocol.swift */,
 				3D89CD132A40996E00BDEE8A /* SignupFormModelValidator.swift */,
 				3D0782DF2A44900700B7726F /* SignupError.swift */,
 				3D0782DD2A448FF800B7726F /* SignUpResponseModel.swift */,
@@ -146,11 +146,10 @@
 		3D0782E52A44915800B7726F /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				3DAB368D2A4F2462000444F4 /* Mocks */,
+				3DAB368B2A4F244F000444F4 /* Presenters */,
 				3D0782E72A44916100B7726F /* Network */,
 				3D0782E62A44915D00B7726F /* Models */,
-				3D89FEEA2A49DB810030F17D /* MockURLProtocol.swift */,
-				3DAB367F2A4F1983000444F4 /* SignupPresenterTests.swift */,
-				3DAB36862A4F1D39000444F4 /* MockSignupModelValidator.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -177,6 +176,31 @@
 				3DAB36842A4F1B10000444F4 /* SignupPresenter.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		3DAB368A2A4F2440000444F4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3DAB36882A4F1DF4000444F4 /* SignupModelValidatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3DAB368B2A4F244F000444F4 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				3DAB367F2A4F1983000444F4 /* SignupPresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		3DAB368D2A4F2462000444F4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3D89FEEA2A49DB810030F17D /* MockURLProtocol.swift */,
+				3DAB36862A4F1D39000444F4 /* MockSignupModelValidator.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		3DF4E74E2A3B652600DDE3BF = {
