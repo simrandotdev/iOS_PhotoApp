@@ -23,16 +23,35 @@ final class SignupViewControllerTests: XCTestCase {
         sut = nil
     }
 
-    func testSignupViewController_WhenCreated_HasRequiredTextFieldsEmpty() {
+    func testSignupViewController_WhenCreated_HasRequiredTextFieldsEmpty() throws {
         
         // Act
         sut?.loadViewIfNeeded()
         
+        let firstNameTextField = try XCTUnwrap(sut?.userFirstNameTextField)
+        let lastNameTextField = try XCTUnwrap(sut?.userLastNameTextField)
+        let emailTextField = try XCTUnwrap(sut?.userEmailTextField)
+        let passwordTextField = try XCTUnwrap(sut?.userPasswordTextField)
+        let repeatPasswordTextField = try XCTUnwrap(sut?.userRepeatPasswordTextField)
+        
         // Assert
-        XCTAssertEqual(sut?.userFirstNameTextField.text, "")
-        XCTAssertEqual(sut?.userLastNameTextField.text, "")
-        XCTAssertEqual(sut?.userEmailTextField.text, "")
-        XCTAssertEqual(sut?.userPasswordTextField.text, "")
-        XCTAssertEqual(sut?.userRepeatPasswordTextField.text, "")
+        XCTAssertEqual(firstNameTextField.text, "")
+        XCTAssertEqual(lastNameTextField.text, "")
+        XCTAssertEqual(emailTextField.text, "")
+        XCTAssertEqual(passwordTextField.text, "")
+        XCTAssertEqual(repeatPasswordTextField.text, "")
+    }
+    
+    func testSignupViewController_WhenCreated_HasSignupButtonAndAction() throws {
+        
+        // Act
+        sut?.loadViewIfNeeded()
+        let signupButton = try XCTUnwrap(sut?.signupButton)
+        let signupButtonActions = signupButton.actions(forTarget: sut, forControlEvent: .touchUpInside)
+        
+        // Assert
+        
+        XCTAssertEqual(signupButtonActions?.count, 1)
+        XCTAssertTrue(signupButtonActions?.contains("signupButtonAction:") ?? false)
     }
 }

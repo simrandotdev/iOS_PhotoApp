@@ -14,12 +14,16 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     @IBOutlet weak var userRepeatPasswordTextField: UITextField!
+    @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func signupButtonAction(_ sender: Any) {
+        
+    }
+    
 }
 
