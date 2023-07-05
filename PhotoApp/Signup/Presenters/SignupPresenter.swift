@@ -7,7 +7,11 @@
 
 import Foundation
 
-class SignupPresenter {
+protocol SignupPresenterProtocol {
+    func processUserSignup(formModel: SignupFormModel)
+}
+
+class SignupPresenter: SignupPresenterProtocol {
     
     private var formModelValidator: SignupModelValidatorProtocol
     private var signupWebService: SignupWebServiceProtocol

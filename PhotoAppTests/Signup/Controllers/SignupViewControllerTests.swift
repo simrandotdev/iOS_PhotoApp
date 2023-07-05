@@ -54,4 +54,19 @@ final class SignupViewControllerTests: XCTestCase {
         XCTAssertEqual(signupButtonActions?.count, 1)
         XCTAssertTrue(signupButtonActions?.contains("signupButtonAction:") ?? false)
     }
+    
+    func testSignupViewController_WhenCreated_InvokesSignupProcess() throws {
+        
+        // Arrange
+        let mockSignupPresenter = MockSignupPresenter()
+        sut.signupPresenter = mockSignupPresenter
+        
+        // Act
+        sut?.loadViewIfNeeded()
+        let signupButton = try XCTUnwrap(sut?.signupButton)
+        signupButton.sendActions(for: .touchUpInside)
+        
+        // Assert
+        XCTAssertTrue(mockSignupPresenter.processUserSignupCalled)
+    }
 }
