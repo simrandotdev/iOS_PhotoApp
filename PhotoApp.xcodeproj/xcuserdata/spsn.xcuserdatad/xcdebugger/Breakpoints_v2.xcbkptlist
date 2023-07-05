@@ -23,79 +23,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2B3DCDA9-60BF-4878-836E-C8A0FB18A226"
+            uuid = "45006869-DD29-4B8B-BB24-F956B25A4DC7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Presenters/SignupPresenter.swift"
+            filePath = "PhotoAppTests/Signup/Mocks/MockSignUpWebService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "processUserSignup(formModel:)"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "signup(withForm:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8B11E790-08CA-477E-8E8F-112FDC264CE4"
+            uuid = "1EFBC183-3DC9-4A15-AFEA-485971D7C472"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Presenters/SignupPresenter.swift"
+            filePath = "PhotoAppTests/Signup/Mocks/MockSignupViewDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "processUserSignup(formModel:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "successfulSignup()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C34C1C41-67DF-4309-8948-E3C5CD0CC3E1"
+            uuid = "6F19BE85-FF84-4044-867A-378EFE25DEE8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoApp/Signup/Presenters/SignupPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "processUserSignup(formModel:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2FC140CE-B4B1-4FB7-83BA-900482BC1A97"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Presenters/SignupPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "processUserSignup(formModel:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "01F5DC82-C0C1-45D1-A6E6-50AEF812C73E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Presenters/SignupPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "processUserSignup(formModel:)"
             landmarkType = "7">
          </BreakpointContent>
